@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HD Kopi - Kedai Kopi Hangat & Nyaman</title>
+    <style>
+        /* --- TEMA WARNA & ASSIGNMENT KEDAI KOPI --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fcf8f2;
+            color: #4a3424;
+        }
+
+        /* --- HERO HEADER --- */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            color: #f3e5d8;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* --- CONTAINER UTAMA --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            position: relative;
+            color: #5c3d2e;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #865439;
+            margin: 10px auto 0 auto;
+        }
+
+        /* --- SECTION ALAMAT --- */
+        .info-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-bottom: 40px;
+            border-left: 5px solid #865439;
+        }
+
+        .info-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* --- SECTION MENU (GRID) --- */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 5px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-info {
+            padding: 20px;
+        }
+
+        .menu-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #5c3d2e;
+        }
+
+        .menu-desc {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 15px;
+            height: 40px;
+            overflow: hidden;
+        }
+
+        .menu-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #865439;
+        }
+
+        /* --- FOOTER & MEDSOS --- */
+        footer {
+            background-color: #382216;
+            color: #f3e5d8;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .social-links a {
+            color: #f3e5d8;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 15px;
+            border: 1px solid #f3e5d8;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #f3e5d8;
+            color: #382216;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HD KOPI</h1>
+        <p>Aroma Terbaik di Setiap Cangkir, Cerita di Setiap Tegukan.</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="info-section">
+            <h2>Alamat Kedai</h2>
+            <p>📍 Jl. Kopi Syahdu No. 45, Blok C, Kota Pintar (Samping Taman Kota)</p>
+            <p>⏰ Buka Setiap Hari: 10.00 - 22.00 WIB</p>
+        </section>
+
+        <section>
+            <h2>Menu Spesial Kami</h2>
+            
+            <div class="menu-grid">
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=500" alt="Espresso" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-title">Espresso Shot</div>
+                        <div class="menu-desc">Ekstrak kopi murni yang pekat dan kuat untuk penyemangat harimu.</div>
+                        <div class="menu-price">Rp 15.000</div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fc9f?q=80&w=500" alt="Es Kopi Susu Gula Aren" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-title">Es Kopi Susu Gula Aren</div>
+                        <div class="menu-desc">Perpaduan espresso, susu segar, dan manisnya gula aren lokal asli.</div>
+                        <div class="menu-price">Rp 18.000</div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1571658529997-ba969f04db5e?q=80&w=500" alt="Cafe Latte" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-title">Cafe Latte</div>
+                        <div class="menu-desc">Espresso lembut berpadu dengan gurihnya steam milk yang pas.</div>
+                        <div class="menu-price">Rp 22.000</div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=500" alt="V60 Manual Brew" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-title">V60 Manual Brew</div>
+                        <div class="menu-desc">Kopi seduh manual pilihan dengan sensasi rasa buah dan bunga.</div>
+                        <div class="menu-price">Rp 20.000</div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?q=80&w=500" alt="Choco Lava Warm" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-title">Premium Hot Chocolate</div>
+                        <div class="menu-desc">Minuman cokelat kental premium bagi kamu yang sedang tidak ingin kopi.</div>
+                        <div class="menu-price">Rp 22.000</div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1600431521340-491eca880813?q=80&w=500" alt="Croissant Original" class="menu-img">
+                    <div class="menu-info">
+                        <div class="menu-title">Butter Croissant</div>
+                        <div class="menu-desc">Pastry renyah bermentega tinggi, teman paling pas untuk ngopi.</div>
+                        <div class="menu-price">Rp 17.000</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 HD Kopi. Hak Cipta Dilindungi.</p>
+        <div class="social-links">
+            <a href="#" target="_blank">Instagram: @hd.kopi</a>
+            <a href="#" target="_blank">TikTok: @hdkopi.id</a>
+            <a href="#" target="_blank">WhatsApp: 0812-3456-7890</a>
+        </div>
+    </footer>
+
+</body>
+</html>
